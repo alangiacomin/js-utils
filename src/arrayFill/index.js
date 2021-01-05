@@ -4,7 +4,7 @@ const arrayFill = (cnt, fill) => {
   }
   const arr = [];
   for (let i = 0; i < cnt; i++) {
-    arr.push(fill);
+    arr.push(typeof fill === 'function' ? fill() : fill);
   }
   return arr;
 };

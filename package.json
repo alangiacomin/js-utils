@@ -24,6 +24,7 @@
     "url": "https://github.com/alangiacomin/js-utils.git"
   },
   "main": "src/index.js",
+  "typings": "src/index.d.ts",
   "scripts": {
     "test": "jest --verbose"
   },

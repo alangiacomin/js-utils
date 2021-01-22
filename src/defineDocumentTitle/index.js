@@ -1,7 +1,7 @@
 import isEmptyString from '../isEmptyString';
 
 const defineDocumentTitle = (text, separator = ' - ') => {
-  const rootTitle = process.env.MIX_APP_NAME;
+  const rootTitle = window.appname;
   if (isEmptyString(text)) {
     return rootTitle;
   }

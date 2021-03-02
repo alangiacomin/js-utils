@@ -26,7 +26,8 @@
   "main": "src/index.js",
   "typings": "src/index.d.ts",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "typings": "copy index.js index.d.ts"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.12.1",

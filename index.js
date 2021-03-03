@@ -11,6 +11,6 @@ export { default as makeRequest } from './src/makeRequest';
 export { default as objectValues } from './src/objectValues';
 export { default as preventPropagation } from './src/preventPropagation';
 export { default as setDocumentTitle } from './src/setDocumentTitle';
-export { default as trimStart } from './src/src/trimStart';
+export { default as trimStart } from './src/trimStart';
 export { default as uniqueId } from './src/uniqueId';
 export { default as upperFirst } from './src/upperFirst';

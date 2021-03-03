@@ -27,7 +27,9 @@
   "typings": "src/index.d.ts",
   "scripts": {
     "test": "jest --verbose",
-    "typings": "copy index.js index.d.ts"
+    "typings": "copy index.js index.d.ts",
+    "v:patch": " npm version patch && git push origin master --tags && npm run v:publish",
+    "v:publish": "npm publish --access public"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.12.1",

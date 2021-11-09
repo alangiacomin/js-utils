@@ -1,0 +1,29 @@
+{
+    "env": {
+        "amd": true,
+        "browser": true,
+        "es6": true,
+        "jquery": true,
+        "node": true,
+        "worker": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+    "parser": "@babel/eslint-parser",
+    "plugins": ["babel"],
+    "rules": {
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": "off",
+        "max-len": [2, { "code": 160, "tabWidth": 2, "ignoreUrls": true }],
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+        "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-multiple-empty-lines": ["error"],
+        "import/extensions": "off"
+    }
+}

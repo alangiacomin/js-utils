@@ -1,0 +1,35 @@
+{
+  "name": "@alangiacomin/js-utils",
+  "version": "1.0.0",
+  "description": "Javascript utilities",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alangiacomin/js-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utilities"
+  ],
+  "author": {
+    "name": "Alan Giacomin",
+    "email": "alan.giacomin@gmail.com"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint --ext .jsx src/**/*.{js,jsx}",
+    "lint:watch": "esw --watch --color --ext .jsx src/**/*.{js,jsx}"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.7",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-babel": "^5.3.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

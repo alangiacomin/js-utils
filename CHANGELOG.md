@@ -1,3 +1,9 @@
+2.0.2 / 2022-01-30
+==================
+
+* Fix vulnerability: Regular expression denial of service
+  ([advisories/GHSA-ww39-953v-wcq6](https://github.com/advisories/GHSA-ww39-953v-wcq6))
+
 2.0.1 / 2022-01-30
 ==================
 

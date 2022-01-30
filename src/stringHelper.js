@@ -1,5 +1,20 @@
+/**
+ * @module stringHelper
+ */
+
+/**
+ * Detects if string is empty
+ * @param value The string
+ * @returns {boolean} True if null, undefined or empty string
+ */
 const isEmptyString = (value = '') => value === null || value === undefined || value === '';
 
+/**
+ * Trim left chars in string
+ * @param value The string
+ * @param chars Chars to trim
+ * @returns {string} The result string
+ */
 const trimStart = (value, chars = ' ') => {
   if (typeof value !== 'string' || isEmptyString(value)) {
     return '';
@@ -22,6 +37,11 @@ const trimStart = (value, chars = ' ') => {
   return newValue;
 };
 
+/**
+ * Converts uppercase first letter of string
+ * @param value The string
+ * @returns {string} The result string
+ */
 const upperFirst = (value) => {
   if (isEmptyString(value) || typeof value !== 'string') {
     return '';

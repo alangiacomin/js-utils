@@ -1,3 +1,7 @@
+/**
+ * @module dateHelper
+ */
+
 const dateHelper = (d) => {
   const date = new Date(d);
 

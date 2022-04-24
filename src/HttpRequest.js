@@ -81,7 +81,7 @@ const post = (url, data, options = {}) => {
 //   rejectedAction: createRejectedAction(actionName),
 // });
 
-const httpRequest = {
+const HttpRequest = {
   get,
   post,
   // useActions,
@@ -91,4 +91,6 @@ const httpRequest = {
   // createRejectedAction,
 };
 
-export default httpRequest;
+export {
+  HttpRequest
+};

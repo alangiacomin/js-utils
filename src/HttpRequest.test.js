@@ -1,5 +1,5 @@
 import axios from 'axios';
-import httpRequest from './httpHelper';
+import httpRequest from './HttpRequest';
 
 jest.mock('axios');
 axios.request.mockImplementation(() => Promise.resolve({ data: {} }));

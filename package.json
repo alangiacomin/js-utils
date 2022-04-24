@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/alangiacomin/js-utils.git"
   },
+  "main": "./src",
   "keywords": [
     "javascript",
     "utilities"

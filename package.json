@@ -24,20 +24,20 @@
     "docs": "jsdoc -c jsdoc.json"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
+    "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.15.7",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "clean-jsdoc-theme": "^3.3.1",
-    "eslint": "^8.2.0",
+    "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-plugin-babel": "^5.3.1",
     "jest": "^27.3.1",
     "jsdoc": "^3.6.10"
   },
   "dependencies": {
-    "axios": "^0.26.0",
-    "webpack": "^5.67.0"
+    "axios": "^0.26.1",
+    "webpack": "^5.72.0"
   }
 }

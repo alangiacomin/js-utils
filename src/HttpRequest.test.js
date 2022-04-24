@@ -1,17 +1,17 @@
 import axios from 'axios';
-import httpRequest from './HttpRequest';
+import { HttpRequest } from './HttpRequest';
 
 jest.mock('axios');
 axios.request.mockImplementation(() => Promise.resolve({ data: {} }));
 
 describe('httpRequest get', () => {
   it('is function', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     expect(typeof get).toEqual('function');
   });
 
   it('only url', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url');
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -25,7 +25,7 @@ describe('httpRequest get', () => {
   });
 
   it('empty params', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url', []);
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -39,7 +39,7 @@ describe('httpRequest get', () => {
   });
 
   it('with params', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url', [{ first: 1 }]);
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -53,7 +53,7 @@ describe('httpRequest get', () => {
   });
 
   it('empty options', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url', [], {});
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -67,7 +67,7 @@ describe('httpRequest get', () => {
   });
 
   it('fullResponse false', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url', [], { fullResponse: false });
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -81,7 +81,7 @@ describe('httpRequest get', () => {
   });
 
   it('fullResponse true', () => {
-    const { get } = httpRequest;
+    const { get } = HttpRequest;
     get('url', [], { fullResponse: true });
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -97,12 +97,12 @@ describe('httpRequest get', () => {
 
 describe('httpRequest post', () => {
   it('is function', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     expect(typeof post).toEqual('function');
   });
 
   it('only url', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url');
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -116,7 +116,7 @@ describe('httpRequest post', () => {
   });
 
   it('empty data', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url', []);
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -130,7 +130,7 @@ describe('httpRequest post', () => {
   });
 
   it('with data', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url', [{ first: 1 }]);
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -144,7 +144,7 @@ describe('httpRequest post', () => {
   });
 
   it('empty options', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url', [], {});
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -158,7 +158,7 @@ describe('httpRequest post', () => {
   });
 
   it('fullResponse false', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url', [], { fullResponse: false });
     expect(axios.request).toBeCalledWith({
       url: 'url',
@@ -172,7 +172,7 @@ describe('httpRequest post', () => {
   });
 
   it('fullResponse true', () => {
-    const { post } = httpRequest;
+    const { post } = HttpRequest;
     post('url', [], { fullResponse: true });
     expect(axios.request).toBeCalledWith({
       url: 'url',

@@ -2,7 +2,7 @@
  * @module httpHelper
  */
 
-import axios from 'axios';
+import { axios } from '@bundled-es-modules/axios';
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
